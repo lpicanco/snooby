@@ -62,7 +62,7 @@ module Snooby
     :post_comments      => 'comments/%s.json',
     :reddit             => '.json',
     :save               => 'api/save',
-    :saved              => 'saved.json',
+    :saved              => 'user/%s/saved.json',
     :submit             => 'api/submit',
     :subreddit_about    => 'r/%s/about.json',
     :subreddit_comments => 'r/%s/comments.json',
