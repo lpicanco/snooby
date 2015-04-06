@@ -24,6 +24,10 @@ module Snooby
       Hash[html.split('y>')[2].scan(rx).map { |r| [r.shift, r.map(&:to_i)] }]
     end
 
+    def saved(count = 25)
+      Snooby.build Post, :saved, @name, count
+    end
+
     def liked(count = 25)
       Snooby.build Post, :liked, @name, count
     end
@@ -34,6 +38,10 @@ module Snooby
 
     def hidden(count = 25)
       Snooby.build Post, :hidden, @name, count
+    end
+
+    def posts(count = 25)
+      Snooby.build Post, :user_posts, @name, count
     end
 
     def friend(un = '')

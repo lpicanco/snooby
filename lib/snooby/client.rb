@@ -65,11 +65,6 @@ module Snooby
       Snooby.request(Paths[:me])['data']
     end
 
-    # Returns an array of structs containing the current client's saved posts.
-    def saved(count = 25)
-      Snooby.build Post, :saved, nil, count
-    end
-
     def submit(name, title, content)
       Subreddit.new(name).submit title, content
     end
