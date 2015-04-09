@@ -6,9 +6,9 @@ require 'snooby/version'
 Gem::Specification.new do |spec|
   spec.name          = "snooby"
   spec.version       = Snooby::VERSION
-  spec.authors       = ["Donnie Akers"]
-  spec.email         = ["andkerosine@gmail.com"]
-  spec.homepage      = 'https://github.com/andkerosine/snooby'
+  spec.authors       = ["Luiz Picanço"]
+  spec.email         = ["lpicanco@gmail.com"]
+  spec.homepage      = 'https://github.com/lpicanco/snooby'
   spec.summary       = %q{Snooby wraps the reddit API in happy, convenient Ruby.}
   spec.license       = ''
   spec.files         = `git ls-files`.split($/)
